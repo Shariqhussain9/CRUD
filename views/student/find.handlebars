@@ -1,0 +1,26 @@
+<div class="col-md-8 offset-md-4 container well"
+    style="background-color:aqua; margin-top:25px; padding:20px; margin-left:250px;">
+    <table class="table strtipped">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Fname</th>
+            <th>Password</th>
+            <th>Mobile</th>
+        </thead>
+        {{!-- <ul class="list-group"> --}}
+        {{#each list}}
+        <tr>
+            <td>{{this.Name}}</td>
+            <td>{{this.Fname}}</td>
+            <td>{{this.Email}}</td>
+            <td>{{this.Password}}</td>
+            <td>{{this.Mobile}}</td>
+            <td><a href="{{this._id}}">Edit</a></td>
+            <td><a href="delete/{{this._id}}">Delete</a></td>
+        </tr>
+        {{/each}}
+        {{!-- </ul> --}}
+    </table>
+
+</div>

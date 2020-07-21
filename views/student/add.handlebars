@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3 container well" style="background-color:aqua; margin-top:25px; padding:20px; margin-left:250px;">
+    <div class="alert alert-success"</div>
+    <form action='/student/add' method='post'>
+        <div class="form-group">
+            <label for='Name'>Name:</label>
+            <input type="text" class='form-control' name='name' placeholder="Enter your Name"/>
+            <label for='fname'>FName:</label>
+            <input type='text' class='form-control' name='fname' placeholder="Enter your's FName"/>
+            <label for='email'>Email:</label>
+            <input type='email' class='form-control' name='email' placeholder="Enter your Email"/>
+            <label for='password'>password:</label>
+            <input type='password' class='form-control' name='password' placeholder="Enter your password"/>
+            <label for='repassword'>repassword:</label>
+            <input type='password' class='form-control' name='repassword' placeholder="Re-enter your Password"/>
+            <label for='mobile'>Mobile:</label>
+            <input type='tel' class='form-control' name='mobile' placeholder="Enter your Mobile No."/>
+            <button type="submit" class='btn btn-default' onclick="Click()">Save</button>
+        </div>
+        
+    </form>
+</div>
+<script>
+    function Click(){
+        document.getElementsByClassName('alert').innerHTML="Data Saved Successfully";
+        window.alert("!!Data Saved");
+        console.log('!!!Data Saved');
+    }
+</script>
